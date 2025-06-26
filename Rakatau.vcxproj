@@ -14,8 +14,9 @@
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{eb3b0c76-f995-455b-9eb3-72b32c839194}</ProjectGuid>
-    <RootNamespace>Hatappang</RootNamespace>
+    <RootNamespace>Rakatau</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Rakatau</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -57,9 +58,11 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>HTPG_PLATFORM_WINDOWS;HTPG_BUILD_DLL;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>RKT_PLATFORM_WINDOWS;RKT_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -72,9 +75,11 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>HTPG_PLATFORM_WINDOWS;HTPG_BUILD_DLL;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>RKT_PLATFORM_WINDOWS;RKT_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -82,16 +87,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include=".gitmodules" />
     <None Include="LICENSE" />
     <None Include="README.md" />
+    <None Include="src\Core\.gitignore" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Core\Log.h" />
     <ClInclude Include="src\Core\Aplikasi.h" />
     <ClInclude Include="src\Core\Core.h" />
     <ClInclude Include="src\Core\EntryPoint.h" />
-    <ClInclude Include="src\Htpg.h" />
+    <ClInclude Include="src\Rkt.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Core\Log.cpp" />
     <ClCompile Include="src\Core\Aplikasi.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

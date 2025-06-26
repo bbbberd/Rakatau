@@ -1,6 +1,6 @@
 #include "Aplikasi.h"
 
-namespace Hatappang {
+namespace Rakatau {
 	Aplikasi::Aplikasi() {
 
 	}

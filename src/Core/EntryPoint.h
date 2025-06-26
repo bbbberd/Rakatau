@@ -1,15 +1,16 @@
 #pragma once
 
-#ifdef HTPG_PLATFORM_WINDOWS
+#ifdef RKT_PLATFORM_WINDOWS
 
-extern Hatappang::Aplikasi* Hatappang::BuatAplikasi();
+extern Rakatau::Aplikasi* Rakatau::BuatAplikasi();
 
 int main(int argc, char** argv) {
-	auto app = Hatappang::BuatAplikasi();
+	Rakatau::Log::Init();
+	RKT_CORE_WARN("Menginisialisasi Log! (Initialized log!)");
+	int a{ 5 };
+	RKT_INFO("Halo Var={0}", a);
+	auto app = Rakatau::BuatAplikasi();
 	app->Run();
 	delete app;
 }
-
-
-
 #endif

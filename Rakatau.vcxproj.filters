@@ -17,6 +17,9 @@
   <ItemGroup>
     <None Include="LICENSE" />
     <None Include="README.md" />
+    <None Include="src\Core\.gitignore" />
+    <None Include=".gitignore" />
+    <None Include=".gitmodules" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Core\Core.h">
@@ -25,15 +28,21 @@
     <ClInclude Include="src\Core\Aplikasi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Htpg.h">
+    <ClInclude Include="src\Rkt.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Core\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Core\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Aplikasi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,11 +1,11 @@
-#include <Htpg.h>
+#include <Rkt.h>
 
-class Sandbox : public Hatappang::Aplikasi {
+class Sandbox : public Rakatau::Aplikasi {
 public:
 	Sandbox() {}
 	~Sandbox() {}
 };
 
-Hatappang::Aplikasi* Hatappang::BuatAplikasi() {
+Rakatau::Aplikasi* Rakatau::BuatAplikasi() {
 	return new Sandbox();
 }

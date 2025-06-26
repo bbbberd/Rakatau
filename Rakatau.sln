@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36212.18 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{6DA11541-56EF-43BF-BFF4-50D0FCA264F8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hatappang", "Hatappang.vcxproj", "{EB3B0C76-F995-455B-9EB3-72B32C839194}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rakatau", "Rakatau.vcxproj", "{EB3B0C76-F995-455B-9EB3-72B32C839194}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
